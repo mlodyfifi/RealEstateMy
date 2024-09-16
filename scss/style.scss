@@ -1,0 +1,484 @@
+* {
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 61.5%;
+}
+
+header {
+	display: flex;
+	.logo {
+		margin-top: 4em;
+		font-family: 'Bebas Neue';
+		.top {
+			font-size: 3.5em;
+			font-weight: 600;
+			letter-spacing: 2px;
+		}
+		.bottom {
+			font-size: 2.5em;
+			text-align: center;
+			background-color: tomato;
+		}
+	}
+
+	.desktop-menu {
+		width: 700px;
+		margin-top: 6em;
+		display: flex;
+		li {
+			list-style: none;
+			text-transform: uppercase;
+			letter-spacing: 1.1px;
+			a {
+				font-size: 2em;
+				text-decoration: none;
+				color: black;
+				border-radius: 8px;
+				transition: all 0.3s;
+			}
+
+			a:hover {
+				background-color: tomato;
+				padding: 10px;
+			}
+		}
+	}
+
+	.burger-btn {
+		margin-top: 6em;
+		cursor: pointer;
+	}
+}
+
+main {
+	display: flex;
+	margin-top: 4em;
+	max-width: 1200px;
+	.photo {
+		img {
+			margin-top: 3em;
+			margin-left: 10em;
+			height: 400px;
+		}
+	}
+
+	.main-text {
+		flex-direction: column;
+		text-align: left;
+	}
+	.first-text {
+		font-size: 1.5em;
+		letter-spacing: 0.2em;
+		font-weight: 300;
+		color: gray;
+		text-transform: uppercase;
+	}
+	.second-text {
+		margin-top: 0.5em;
+		font-family: serif;
+		font-size: 4em;
+		font-weight: 550;
+	}
+
+	.third-text {
+		margin-top: 2em;
+		font-size: 1.5em;
+		line-height: 2;
+	}
+
+	.button-box {
+		margin-top: 6em;
+		display: flex;
+		flex-direction: row;
+		.first-button {
+			display: flex;
+			margin-bottom: 2em;
+			border: 1px solid tomato;
+			border-radius: 8px;
+			background-color: tomato;
+			padding: 1em;
+			color: white;
+			font-size: 2em;
+			cursor: pointer;
+			transition: all 0.3s;
+			.gg-chevron-right {
+				margin: 0;
+				padding: 0;
+			}
+		}
+		.first-button:hover {
+			scale: 1.2;
+			background-color: rgb(216, 49, 49);
+		}
+
+		.sec-button {
+			display: flex;
+			align-items: center;
+			font-size: 2em;
+			padding: 1em;
+			height: 70px;
+			background-color: #fff;
+			border: 1px solid black;
+			transition: all 0.3s;
+			cursor: pointer;
+		}
+		.sec-button:hover {
+			scale: 1.2;
+		}
+	}
+}
+
+hr {
+	margin-top: 2em;
+}
+
+// ABOUT US
+
+.about-us {
+	margin-top: 2em;
+	.about-heading {
+		font-size: 2em;
+		letter-spacing: 0.2em;
+		font-weight: 300;
+		color: gray;
+		text-transform: uppercase;
+	}
+	.about-main-text {
+		margin-top: 1em;
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	.team-box {
+		display: flex;
+		margin-top: 4em;
+		width: 100%;
+		.card {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			text-align: center;
+			width: 250px;
+			height: 350px;
+			text-transform: uppercase;
+			cursor: pointer;
+			border-radius: 8px;
+			padding: 10px;
+			transition: all 0.3s;
+			.card-head {
+				font-size: 3em;
+			}
+			.specification {
+				font-weight: 900;
+				font-size: 1.8em;
+				color: tomato;
+			}
+			.description-about {
+				font-size: 1.2em;
+			}
+			img {
+				height: 200px;
+				width: 200px;
+				border-radius: 50%;
+				object-fit: cover;
+				object-position: top;
+			}
+		}
+		.card:hover {
+			background-color: tomato;
+			color: #fff;
+			scale: 1.2;
+
+			.specification {
+				color: black;
+			}
+		}
+	}
+}
+
+// VIDEO
+
+.portfolio {
+	margin-top: 2em;
+	.video-box-first {
+		display: flex;
+		margin: 0;
+	}
+	.video-box-second {
+		display: flex;
+		margin: 0;
+	}
+
+	// PORTFOLIO
+
+	.portfolio-heading {
+		font-size: 2em;
+		letter-spacing: 0.2em;
+		font-weight: 300;
+		color: gray;
+		text-transform: uppercase;
+	}
+	.portfolio-text {
+		margin-top: 2em;
+		font-size: 1.5em;
+		text-align: center;
+	}
+}
+
+// SERVICES
+
+.services {
+	margin-top: 2em;
+	.services-heading {
+		font-size: 2em;
+		letter-spacing: 0.2em;
+		font-weight: 300;
+		color: gray;
+		text-transform: uppercase;
+	}
+	.services-cards {
+		display: flex;
+		flex-direction: row;
+		margin-top: 2em;
+		padding: 20px;
+		.services-card {
+			text-align: center;
+			padding: 25px;
+			width: 250px;
+			background-color: tomato;
+			border-radius: 8px;
+			transition: all 0.3s;
+			cursor: pointer;
+			a {
+				text-decoration: none;
+				color: black;
+			}
+			.card-title {
+				color: #ffffff;
+				font-size: 3em;
+			}
+			.services-icon {
+				margin-top: 1em;
+				font-size: 4em;
+			}
+			.services-description {
+				color: #ffffff;
+				margin-top: 2em;
+				font-size: 2em;
+			}
+		}
+		.services-card:hover {
+			scale: 1.2;
+		}
+	}
+}
+
+// CONTACT
+
+.contact {
+	margin-top: 2em;
+    .contact-heading {
+        font-size: 2em;
+        letter-spacing: .2em;
+        font-weight: 300;
+        color: gray;
+        text-transform: uppercase; 
+    }
+	.box-contact {
+        margin-top: 4em;
+        display: flex;
+        align-items: center;
+        .contact-box-one {
+            .contact-title {
+                position: relative;
+                font-size: 2em;
+                margin-bottom: 2em;
+                text-align: center;
+            }
+            .contact-title::after {
+                position: absolute;
+                display: block;
+                content: '';
+                width: 100%;
+                height: 2px;
+                background: tomato;
+                bottom: -5px;
+            }
+            .phone-number {
+                font-size: 2em;
+                letter-spacing: 1px;
+                text-align: center;
+                margin-bottom: 2em;
+            }
+            .email-box {
+                font-size: 2em;
+            }
+        }
+    }
+}
+
+footer {
+    margin: 1em 0 1em 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+    header {
+        .desktop-menu {
+            display: none;
+        }
+    }
+
+    main {
+        margin: 10px;
+        .main-text {
+            .first-text {
+                margin-top: 2em;
+            }
+        }
+        .photo {
+            display: none;
+        }
+        .button-box {
+            display: flex;
+            flex-direction: column;
+            .first-button {
+                font-size: 2em;
+            }
+        }
+    }
+
+    .about-us {
+        margin: 10px;
+        .team-box {
+            flex-direction: column;
+        }
+    }
+
+    .portfolio {
+        margin: 10px;
+        .video-box-first {
+            flex-direction: column;
+            video {
+                width: 350px;
+            }
+        }
+        .video-box-second {
+            flex-direction: column;
+            video {
+                width: 350px;
+            }
+        }
+    }
+
+    .services {
+        margin: 10px;
+        .services-cards {
+            flex-direction: column;
+            .services-card {
+                margin-bottom: 2em;
+            }
+        }
+    }
+
+    .contact {
+        margin: 10px;
+        .box-contact {
+            flex-direction: column;
+            .contact-box-one {
+                margin-bottom: 2em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		margin: 10px;
+        .desktop-menu {
+			li {
+				a {
+					font-size: 1.6em;
+				}
+			}
+        }
+    }
+
+    main {
+        margin: 10px;
+        .main-text {
+            .first-text {
+                margin-top: 2em;
+            }
+        }
+        .photo {
+			margin-top: 10em;
+            display: flex;
+        }
+        .button-box {
+            display: flex;
+            flex-direction: column;
+            .first-button {
+                font-size: 2em;
+            }
+        }
+    }
+
+    .about-us {
+        margin: 10px;
+        .team-box {
+            flex-direction: column;
+        }
+    }
+
+    .portfolio {
+        margin: 10px;
+        .video-box-first {
+            flex-direction: column;
+            video {
+                width: 350px;
+            }
+        }
+        .video-box-second {
+            flex-direction: column;
+            video {
+                width: 350px;
+            }
+        }
+    }
+
+    .services {
+        margin: 10px;
+        .services-cards {
+            flex-direction: column;
+            .services-card {
+                margin-bottom: 2em;
+            }
+        }
+    }
+
+    .contact {
+        margin: 10px;
+        .box-contact {
+            flex-direction: column;
+            .contact-box-one {
+                margin-bottom: 2em;
+            }
+        }
+    }
+} 
+
+@media screen and (max-width: 992px) {
+	body {
+		margin: 15px;
+	}
+}
